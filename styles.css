@@ -204,6 +204,34 @@ body.dark-mode .muted { color: rgba(230,237,243,0.7); }
   .resume-actions { margin-top: 10px; }
 }
 
+/* Contact grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+  margin-top: 18px;
+}
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  border-radius: 10px;
+  background: rgba(0,0,0,0.04);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+body.dark-mode .contact-card { background: rgba(255,255,255,0.03); }
+.contact-card:hover { transform: translateY(-4px); }
+.contact-icon { font-size: 1.6rem; }
+.contact-label { font-weight: 600; color: var(--primary); }
+.contact-link { display: block; color: var(--text); text-decoration: none; }
+.contact-link:hover { text-decoration: underline; }
+
+@media (max-width: 480px) {
+  .contact-card { padding: 12px; }
+  .contact-icon { font-size: 1.4rem; }
+}
+
 /* Animated Background Icons */
 .animated-icons {
   position: absolute;
