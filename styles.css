@@ -49,13 +49,39 @@ a { color: var(--primary); }
 .hero .overlay {
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0,0,0,0.6);
+  background: linear-gradient(180deg, rgba(3,7,18,0.55), rgba(0,0,0,0.6));
 }
 
 .hero-content {
   position: relative;
   z-index: 3;
 }
+
+/* Hero tech row */
+.hero-tech {
+  display: flex;
+  gap: 18px;
+  justify-content: center;
+  margin-top: 18px;
+}
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.06);
+  padding: 8px 12px;
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.tech-item:hover { transform: translateY(-4px); background: rgba(255,255,255,0.12); }
+.tech-icon { color: #fff; }
+
+/* Make hero content appear on a subtle card for better contrast */
+.hero-content { max-width: 900px; padding: 28px; border-radius: 12px; background: rgba(0,0,0,0.18); }
+body.dark-mode .hero-content { background: rgba(13,17,23,0.45); }
 
 .hero h1 {
   font-size: 3rem;
