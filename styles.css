@@ -105,6 +105,16 @@ a { color: var(--primary); }
   margin: auto;
 }
 
+.section p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
 .section h2 {
   text-align: center;
   margin-bottom: 20px;
